@@ -72,32 +72,31 @@ namespace DibujoAhorcado
             switch (errores)
             {
                 case 1:
-                    g.DrawLine(boli, 50, 300, 100, 250);
-                    g.DrawLine(boli, 100, 250, 150, 300);
+                    g.DrawLine(boli, Width * 0.05f, Height * 0.75f, Width * 0.1f, Height * 0.625f);
+                    g.DrawLine(boli, Width * 0.1f, Height * 0.625f, Width * 0.15f, Height * 0.75f);
 
-                    g.DrawLine(boli, 100, 50, 100, 250);
+                    g.DrawLine(boli, Width * 0.1f, Height * 0.125f, Width * 0.1f, Height * 0.625f);
 
-                    g.DrawLine(boli, 100, 50, 200, 50);
-                    g.DrawLine(boli, 200, 50, 200, 75);
+                    g.DrawLine(boli, Width * 0.1f, Height * 0.125f, Width * 0.2f, Height * 0.125f);
+                    g.DrawLine(boli, Width * 0.2f, Height * 0.125f, Width * 0.2f, Height * 0.1875f);
                     break;
                 case 2:
-                    g.DrawEllipse(boli, 175, 75, 50, 50);
+                    g.DrawEllipse(boli, Width * 0.175f, Height * 0.1875f, Width * 0.05f, Height * 0.125f);
                     goto case 1;
                 case 3:
-                    g.DrawLine(boli, 200, 125, 200, 200);
+                    g.DrawLine(boli, Width * 0.2f, Height * 0.3125f, Width * 0.2f, Height * 0.5f);
                     goto case 2;
                 case 4:
-                    g.DrawLine(boli, 200, 140, 150, 170);
+                    g.DrawLine(boli, Width * 0.2f, Height * 0.35f, Width * 0.15f, Height * 0.425f);
                     goto case 3;
                 case 5:
-                    g.DrawLine(boli, 200, 140, 250, 170);
+                    g.DrawLine(boli, Width * 0.2f, Height * 0.35f, Width * 0.25f, Height * 0.425f);
                     goto case 4;
                 case 6:
-                    g.DrawLine(boli, 200, 200, 150, 230);
+                    g.DrawLine(boli, Width * 0.2f, Height * 0.5f, Width * 0.15f, Height * 0.575f);
                     goto case 5;
-
                 case 7:
-                    g.DrawLine(boli, 200, 200, 250, 230);
+                    g.DrawLine(boli, Width * 0.2f, Height * 0.5f, Width * 0.25f, Height * 0.575f);
                     goto case 6;
                 default:
                     break;
