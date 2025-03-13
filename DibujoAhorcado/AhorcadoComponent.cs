@@ -11,10 +11,12 @@ using System.Collections;
 
 namespace DibujoAhorcado
 {
+    [DefaultEvent("CambiaError")]
+    [DefaultProperty("Errores")]
     public partial class AhorcadoComponent : UserControl
     {
         private int errores = 0;
-        [Category("Propiedades")]
+        [Category("Properties")]
         [Description("Obtiene o establece los  errores del ahorcado")]
         public int Errores
         {
@@ -45,7 +47,7 @@ namespace DibujoAhorcado
             InitializeComponent();
         }
 
-        [Category("Eventos")]
+        [Category("Events")]
         [Description("Se lanza al aumentar los errores(o disminuirlos)")]
         public event EventHandler CambiaError;
         protected virtual void OnCambiaError(EventArgs e)
@@ -53,7 +55,7 @@ namespace DibujoAhorcado
             CambiaError?.Invoke(this, e);
         }
 
-        [Category("Eventos")]
+        [Category("Events")]
         [Description("Se lanza al completar la figura")]
         public event EventHandler Ahorcado;
         protected virtual void OnAhorcado(EventArgs e)
