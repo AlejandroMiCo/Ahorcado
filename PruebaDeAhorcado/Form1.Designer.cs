@@ -34,9 +34,9 @@
             // ahorcadoComponent1
             // 
             this.ahorcadoComponent1.Errores = 7;
-            this.ahorcadoComponent1.Location = new System.Drawing.Point(163, 63);
+            this.ahorcadoComponent1.Location = new System.Drawing.Point(137, 12);
             this.ahorcadoComponent1.Name = "ahorcadoComponent1";
-            this.ahorcadoComponent1.Size = new System.Drawing.Size(831, 427);
+            this.ahorcadoComponent1.Size = new System.Drawing.Size(898, 459);
             this.ahorcadoComponent1.TabIndex = 0;
             // 
             // Form1
